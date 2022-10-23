@@ -63,7 +63,7 @@ button {
     cursor: pointer;
 }
 
-.button-image:hover {
+.button-image:active {
     opacity: 0.7;
 }
 
