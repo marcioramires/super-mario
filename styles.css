@@ -46,6 +46,27 @@
     width: 120px;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 75px;
+}
+
+button {
+    border: none;
+}
+
+.button-image {
+    width: 120px;
+    cursor: pointer;
+}
+
+.button-image:hover {
+    opacity: 0.7;
+}
+
 .jump {
     animation: mario-jump 700ms ease-out;
 }

@@ -1,8 +1,9 @@
 const mario = document.querySelector('.mario')
 const pipe = document.querySelector('.pipe')
 const gameover = document.querySelector('.gameover')
+const jumpButton = document.querySelector('.button')
 
-const spacePressed = (key) => {
+const keyboardJump = (key) => {
 
     if (key.code === "Space") {
 
@@ -12,6 +13,16 @@ const spacePressed = (key) => {
             mario.classList.remove('jump')
         }, 700)
     }
+}
+
+const screenJump = () => {
+
+        mario.classList.add('jump')
+
+        setTimeout(() => {
+            mario.classList.remove('jump')
+        }, 700)
+    
 }
 
 const loopPipe = setInterval(() => {
@@ -38,4 +49,6 @@ const loopPipe = setInterval(() => {
 
 }, 10)
 
-document.addEventListener('keydown', spacePressed)
+document.addEventListener('keydown', keyboardJump)
+
+jumpButton.addEventListener('click', screenJump)
