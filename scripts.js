@@ -1,7 +1,8 @@
 const mario = document.querySelector('.mario')
 const pipe = document.querySelector('.pipe')
 const gameover = document.querySelector('.gameover')
-const jumpButton = document.querySelector('.button')
+const jumpButton = document.querySelector('.jump-button')
+const restartButton = document.querySelector('.restart')
 
 const keyboardJump = (key) => {
 
@@ -43,12 +44,20 @@ const loopPipe = setInterval(() => {
         mario.marginLeft = "50px" 
 
         gameover.style.display = "flex"
-        
+        restartButton.style.display = "flex"
+
         clearInterval(loopPipe)
     }
 
 }, 10)
 
+const restart = () => {
+    window.location.reload()
+}
+
 document.addEventListener('keydown', keyboardJump)
 
 jumpButton.addEventListener('click', screenJump)
+
+
+restartButton.addEventListener('click', restart)

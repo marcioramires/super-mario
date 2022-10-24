@@ -48,6 +48,7 @@
 
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -56,15 +57,30 @@ footer {
 
 button {
     border: none;
+    margin-top: 20px;
 }
 
-.button-image {
+.jump-image {
     width: 120px;
     cursor: pointer;
 }
 
-.button-image:active {
+.jump-image:active {
     opacity: 0.7;
+}
+
+.restart {
+    display: none;
+    border: none;
+}
+
+.restart-image {
+    width: 150px;
+    cursor: pointer;
+}
+
+.restart-image:active {
+    opacity: 0.3;
 }
 
 .jump {
