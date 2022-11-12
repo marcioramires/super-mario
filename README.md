@@ -1,6 +1,6 @@
 # Super Mario
 
-Projeto front-end que disponibiliza ao usuário a criação de uma lista de tarefas pessoal.
+Jogo do Mario desenvolvido para web.
 #
 ![Screenshot 2022-11-12 143929](https://user-images.githubusercontent.com/113479357/201493519-35e7776c-020a-4b56-a835-69328031a0f0.png)
 #
